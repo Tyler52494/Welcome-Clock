@@ -7,6 +7,9 @@ import Clock from "./components/clock/Clock.js"
 import Contact from "./components/contact/Contact"
 import Navigation from './components/navigation/Navigation'
 import Page404 from './components/page404/Page404'
+import Jeopardy from './components/jeopardy/Jeopardy'
+
+
 
 function App() {
   return (
@@ -39,8 +42,16 @@ function App() {
           component = {Contact}
         />
 
+<Route
+        exact
+        path = "/Jeopardy"
+        component = {Jeopardy}
+        />
+
         <Route component={Page404} />
       </Switch>
+
+      
     
 
     </div>
